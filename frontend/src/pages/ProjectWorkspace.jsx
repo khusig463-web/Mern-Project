@@ -231,7 +231,7 @@ const ProjectWorkspace = () => {
   }, [projectId]);
 
   const handleDeleteProject = async () => {
-    if (window.confirm("Kya aap sach mein yeh project delete karna chahte hain?")) {
+    if (window.confirm("Are you sure you want to delete this project")) {
       try {
         await API.delete(`/projects/${projectId}`);
         alert("Project deleted successfully!");
