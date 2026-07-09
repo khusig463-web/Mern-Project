@@ -1,6 +1,6 @@
 # 📊 Project Management Tool (MERN Stack)
 
-A lightweight, robust, and highly efficient **Project Management & Collaboration Tool** built using the MERN stack. This application features secure user authentication, interactive multi-project dashboards, dynamic frictionless team collaboration (without requiring secondary registrations), and a full-fledged visual **Kanban Board** for tracking task progress from inception to completion.
+A lightweight, robust, and highly efficient **Project Management Tool** built using the MERN stack. This application features secure user authentication, interactive multi-project dashboards, dynamic frictionless team collaboration (without requiring secondary registrations), and a full-fledged visual **Kanban Board** for tracking task progress from inception to completion.
 
 ---
 
