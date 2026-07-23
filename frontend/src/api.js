@@ -2,7 +2,8 @@ import axios from 'axios';
 
 
 const API = axios.create({
-  baseURL: 'https://mern-project-883z.onrender.com'
+  baseURL: import.meta.env.VITE_API_URL,
+  withCredentials: true,
 });
 
 // Yeh middleware har request ke sath JWT token automatic bhej dega (agar login hai toh)
