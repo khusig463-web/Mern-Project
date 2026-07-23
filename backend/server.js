@@ -10,9 +10,9 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    process.env.CLIENT_URL
+    "https://mern-project-bu6l.vercel.app"
   ],
-  credentials: true
+  credentials: true,
 }));
 
 app.use(express.json());
