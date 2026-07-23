@@ -1,8 +1,10 @@
 import axios from 'axios';
 
+const rawBaseUrl = import.meta.env.VITE_API_URL || 'https://mern-project-883z.onrender.com';
+const apiBaseUrl = rawBaseUrl.replace(/\/$/, '');
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
+  baseURL: `${apiBaseUrl}/api`,
   withCredentials: true,
 });
 
