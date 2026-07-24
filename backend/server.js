@@ -5,10 +5,9 @@ const cors = require('cors');
 
 const app = express();
 const allowedOrigins = [
-  'https://mern-project-a2pg.vercel.app',
-  'https://mern-project-bu6l.vercel.app',
-  'http://localhost:5173',
-  'http://127.0.0.1:5173'
+  
+  process.env.CLIENT_URL,          // Production Frontend URL (e.g., https://your-app.vercel.app)
+  'http://localhost:5173'
 ];
 
 // Middleware

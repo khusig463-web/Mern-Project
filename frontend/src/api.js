@@ -4,8 +4,7 @@ const rawBaseUrl = import.meta.env.VITE_API_URL || 'https://mern-project-883z.on
 const apiBaseUrl = rawBaseUrl.replace(/\/$/, '');
 
 const API = axios.create({
-  baseURL: `${apiBaseUrl}/api`,
-  withCredentials: true,
+  baseURL: import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api"
 });
 
 // Yeh middleware har request ke sath JWT token automatic bhej dega (agar login hai toh)
